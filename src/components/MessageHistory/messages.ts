@@ -1,4 +1,10 @@
-export const messages = [{
+export const messages: {
+  id: string;
+  from: { name: string };
+  type: 'response' | 'message' | 'typing';
+  time: string;
+  text?: string;
+}[] = [{
   id: 'chat-5-1090',
   from: { name: 'Ольга' },
   type: 'response',
